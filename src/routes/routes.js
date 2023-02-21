@@ -4,7 +4,7 @@ import Buy from "../components/Buy";
 import ErrorPage from "../components/ErrorPage";
 import Home from "../components/Home";
 import Shop from "../components/Shop";
-import Root from "../layouts/Root";
+import Root from "../layout/Root";
 
 export const router = createBrowserRouter([
   {
