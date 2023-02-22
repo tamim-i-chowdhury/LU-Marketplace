@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { FaCartPlus } from "react-icons/fa";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -79,24 +78,25 @@ const Header = () => {
           </ul>
           <ul className="text-xl flex items-center hidden space-x-2 lg:flex">
             <li>
-              <a
-                href="/"
+              <Link
+                to="/register"
                 aria-label="Sign in"
                 title="Sign in"
-                className="btn btn-active btn-ghost rounded-full"
+                // className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-black transition duration-200 shadow-md bg-slate-400 hover:bg-slate-100 focus:shadow-outline focus:outline-none rounded-full"
+                className="btn btn-active btn-ghost rounded-full hover:bg-blue-500 hover:text-white"
               >
-                Sign in
-              </a>
+                Register
+              </Link>
             </li>
             <li>
-              <a
-                href="/"
-                className="btn btn-active rounded-full"
+              <Link
+                to="/login"
+                className="btn btn-active rounded-full hover:bg-blue-500 hover:text-white"
                 aria-label="Sign up"
                 title="Sign up"
               >
-                Sign up
-              </a>
+                Login
+              </Link>
             </li>
           </ul>
           <div className="lg:hidden">
@@ -213,24 +213,24 @@ const Header = () => {
                         </NavLink>
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <Link
+                          to="/register"
                           aria-label="Sign in"
                           title="Sign in"
                           className="btn btn-active btn-ghost rounded-sm"
                         >
                           Sign in
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <Link
+                          to="/login"
                           className="btn btn-active rounded-sm"
                           aria-label="Sign up"
                           title="Sign up"
                         >
-                          Sign up
-                        </a>
+                          Login
+                        </Link>
                       </li>
                     </ul>
                   </nav>

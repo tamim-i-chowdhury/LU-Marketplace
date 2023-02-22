@@ -3,6 +3,8 @@ import About from "../components/About";
 import Buy from "../components/Buy";
 import ErrorPage from "../components/ErrorPage";
 import Home from "../components/Home";
+import Login from "../components/Login";
+import Register from "../components/Register";
 import Shop from "../components/Shop";
 import Root from "../layout/Root";
 
@@ -27,6 +29,14 @@ export const router = createBrowserRouter([
       {
         path: "/about",
         element: <About></About>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
       },
     ],
   },
