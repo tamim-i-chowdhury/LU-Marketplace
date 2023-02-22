@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className="bg-gray-100">
+    <div className="">
       <div className="px-3 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
           <NavLink
@@ -72,7 +72,7 @@ const Header = () => {
                     : "text-xl font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                 }
               >
-                About us
+                About
               </NavLink>
             </li>
           </ul>
@@ -209,7 +209,7 @@ const Header = () => {
                               : "text-xl font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           }
                         >
-                          About us
+                          About
                         </NavLink>
                       </li>
                       <li>
@@ -219,7 +219,7 @@ const Header = () => {
                           title="Sign in"
                           className="btn btn-active btn-ghost rounded-sm"
                         >
-                          Sign in
+                          Sign up
                         </Link>
                       </li>
                       <li>
@@ -229,7 +229,7 @@ const Header = () => {
                           aria-label="Sign up"
                           title="Sign up"
                         >
-                          Login
+                          Sign in
                         </Link>
                       </li>
                     </ul>
