@@ -1,10 +1,12 @@
 import React, { useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { AuthContext } from "../contexts/UserContext";
 
 const Register = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
   const {
     createUser,
     updateName,
@@ -40,7 +42,7 @@ const Register = () => {
             "Email verification link has been sent, please check your email!"
           );
         });
-        navigate("/login");
+        navigate(from, { replace: true });
       })
       .catch((error) => {
         toast.error(error.message);
@@ -55,6 +57,7 @@ const Register = () => {
         const user = result.user;
         console.log(user);
         toast.success("Successfully sign in with google.");
+        navigate(from, { replace: true });
       })
       .catch((error) => {
         toast.error(error.message);
@@ -68,6 +71,7 @@ const Register = () => {
         const user = result.user;
         console.log(user);
         toast.success("Successfully sign in with github.");
+        navigate(from, { replace: true });
       })
       .catch((error) => {
         console.log(error.message);

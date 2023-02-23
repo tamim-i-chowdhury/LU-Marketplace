@@ -1,11 +1,14 @@
 import React, { useContext, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { AuthContext } from "../contexts/UserContext";
 
 const Login = () => {
-  const navigate = useNavigate();
   const [resetEmail, setResetEmail] = useState("");
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
+
   const {
     loginWithEmailAndPassword,
     signInWithGoogle,
@@ -25,7 +28,7 @@ const Login = () => {
         console.log(user);
         // ...
         toast.success("Login success!");
-        navigate("/");
+        navigate(from, { replace: true });
         event.target.reset();
       })
       .catch((error) => {
@@ -42,7 +45,7 @@ const Login = () => {
         const user = result.user;
         console.log(user);
         toast.success("Successfully sign in with google.");
-        navigate("/");
+        navigate(from, { replace: true });
       })
       .catch((error) => {
         toast.error(error.message);
@@ -56,7 +59,7 @@ const Login = () => {
         const user = result.user;
         console.log(user);
         toast.success("Successfully sign in with github.");
-        navigate("/");
+        navigate(from, { replace: true });
       })
       .catch((error) => {
         console.log(error.message);
