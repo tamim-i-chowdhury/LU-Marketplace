@@ -3,13 +3,15 @@ import {
   getAuth,
   GithubAuthProvider,
   GoogleAuthProvider,
+  onAuthStateChanged,
   sendEmailVerification,
   sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signInWithPopup,
+  signOut,
   updateProfile,
 } from "firebase/auth";
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import app from "../firebase/firebase.config";
 
 const auth = getAuth(app);
@@ -56,6 +58,23 @@ const UserContext = ({ children }) => {
     return sendPasswordResetEmail(auth, email);
   };
 
+  // 8. Logout
+  const logOut = () => {
+    return signOut(auth);
+  };
+
+  useEffect(() => {
+    //this part will execute once the component is mounted.
+    const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+    });
+
+    return () => {
+      //this part will execute once the component is unmounted.
+      unSubscribe();
+    };
+  }, []);
+
   const authInfo = {
     user,
     createUser,
@@ -65,6 +84,7 @@ const UserContext = ({ children }) => {
     signInWithGithub,
     loginWithEmailAndPassword,
     resetPassword,
+    logOut,
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>

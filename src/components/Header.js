@@ -1,8 +1,18 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { toast } from "react-toastify";
+import { AuthContext } from "../contexts/UserContext";
 
 const Header = () => {
+  const { user, logOut } = useContext(AuthContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleLogout = () => {
+    logOut()
+      .then(toast.warning("User logged out!"))
+      .catch((error) => console.log(error));
+  };
+
   return (
     <div className="">
       <div className="px-3 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
@@ -77,27 +87,59 @@ const Header = () => {
             </li>
           </ul>
           <ul className="text-xl flex items-center hidden space-x-2 lg:flex">
-            <li>
-              <Link
-                to="/register"
-                aria-label="Sign in"
-                title="Sign in"
-                // className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-black transition duration-200 shadow-md bg-slate-400 hover:bg-slate-100 focus:shadow-outline focus:outline-none rounded-full"
-                className="btn btn-active btn-ghost rounded-full hover:bg-blue-500 hover:text-white"
-              >
-                Register
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/login"
-                className="btn btn-active rounded-full hover:bg-blue-500 hover:text-white"
-                aria-label="Sign up"
-                title="Sign up"
-              >
-                Login
-              </Link>
-            </li>
+            {user && user?.uid ? (
+              <>
+                {" "}
+                <Link
+                  to="/profile"
+                  className="text-xl font-medium mr-5 text-gray-700"
+                >
+                  Profile
+                </Link>
+                <button
+                  onClick={handleLogout}
+                  className="inline-flex items-center bg-black text-white border-0 py-1 px-3 focus:outline-none hover:bg-gray-500 rounded text-base mt-4 md:mt-0"
+                >
+                  Logout
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    className="w-4 h-4 ml-1"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </button>
+              </>
+            ) : (
+              <>
+                {" "}
+                <li>
+                  <Link
+                    to="/register"
+                    aria-label="Sign in"
+                    title="Sign in"
+                    // className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-black transition duration-200 shadow-md bg-slate-400 hover:bg-slate-100 focus:shadow-outline focus:outline-none rounded-full"
+                    className="btn btn-active btn-ghost rounded-full hover:bg-blue-500 hover:text-white"
+                  >
+                    Register
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/login"
+                    className="btn btn-active rounded-full hover:bg-blue-500 hover:text-white"
+                    aria-label="Sign up"
+                    title="Sign up"
+                  >
+                    Login
+                  </Link>
+                </li>
+              </>
+            )}
           </ul>
           <div className="lg:hidden">
             <button
@@ -212,26 +254,59 @@ const Header = () => {
                           About
                         </NavLink>
                       </li>
-                      <li>
-                        <Link
-                          to="/register"
-                          aria-label="Sign in"
-                          title="Sign in"
-                          className="btn btn-active btn-ghost rounded-sm"
-                        >
-                          Sign up
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          to="/login"
-                          className="btn btn-active rounded-sm"
-                          aria-label="Sign up"
-                          title="Sign up"
-                        >
-                          Sign in
-                        </Link>
-                      </li>
+                      {user && user?.uid ? (
+                        <div className="flex flex-col">
+                          {" "}
+                          <Link
+                            to="/profile"
+                            className="text-xl font-medium mr-5 text-gray-700"
+                          >
+                            Profile
+                          </Link>
+                          <button
+                            onClick={handleLogout}
+                            className="w-24 inline-flex items-center bg-black text-white border-0 py-1 px-3 focus:outline-none hover:bg-gray-500 rounded text-base mt-4 md:mt-0"
+                          >
+                            Logout
+                            <svg
+                              fill="none"
+                              stroke="currentColor"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              className="w-4 h-4 ml-1"
+                              viewBox="0 0 24 24"
+                            >
+                              <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                          </button>
+                        </div>
+                      ) : (
+                        <>
+                          {" "}
+                          <li>
+                            <Link
+                              to="/register"
+                              aria-label="Sign in"
+                              title="Sign in"
+                              // className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-black transition duration-200 shadow-md bg-slate-400 hover:bg-slate-100 focus:shadow-outline focus:outline-none rounded-full"
+                              className="btn btn-active btn-ghost rounded-full hover:bg-blue-500 hover:text-white"
+                            >
+                              Sign Up
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="/login"
+                              className="btn btn-active rounded-full hover:bg-blue-500 hover:text-white"
+                              aria-label="Sign up"
+                              title="Sign up"
+                            >
+                              Sign In
+                            </Link>
+                          </li>
+                        </>
+                      )}
                     </ul>
                   </nav>
                 </div>
