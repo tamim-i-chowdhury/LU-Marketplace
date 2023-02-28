@@ -3,14 +3,13 @@ import Lottie from "lottie-react";
 import marketplace from "../assets/marketplace.json";
 import { Link } from "react-router-dom";
 import { FcAdvance } from "react-icons/fc";
-import Buy from "./Buy";
 import BuyAndSellCard from "./BuyAndSellCard";
 
 const Home = () => {
   return (
-    <div className=" px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-4">
-      <div className="flex flex-col items-center justify-between lg:flex-row">
-        <div className="mb-10 lg:max-w-lg  lg:pr-5 lg:mb-0">
+    <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-0">
+      <div className="mt-8 md:mt-0 flex flex-col items-center md:justify-between md:flex-row md:mb-8">
+        <div className="lg:max-w-lg  lg:pr-5 lg:mb-0">
           <div className="max-w-xl mb-6 lg:mt-8">
             <div>
               <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-white uppercase rounded-full bg-red-600">
@@ -43,10 +42,8 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className="relative lg:w-1/2">
-          <div className="w-full lg:w-4/5 lg:ml-auto lg:mb-14 h-56  sm:h-96">
-            <Lottie className="" animationData={marketplace} loop={true} />
-          </div>
+        <div className="w-full md:w-5/12">
+          <Lottie className="" animationData={marketplace} loop={true} />
         </div>
       </div>
       {/* The card of categories started from here! */}

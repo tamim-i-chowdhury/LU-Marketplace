@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div>
       <footer className="bg-white dark:bg-gray-900">
-        <div className="container px-6 py-8 mx-auto">
+        <div className="container px-6 pb-4 mx-auto">
           <div className="flex flex-col items-center text-center">
             <NavLink
               to="/"
