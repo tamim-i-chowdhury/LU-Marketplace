@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -61,14 +61,14 @@ const Footer = () => {
                 Teams{" "}
               </a>
 
-              <a
-                href="/"
+              <Link
+                to="/privacy"
                 className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
                 aria-label="Reddit"
               >
                 {" "}
                 Privacy{" "}
-              </a>
+              </Link>
 
               <a
                 href="/"

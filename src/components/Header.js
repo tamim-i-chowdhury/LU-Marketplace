@@ -2,6 +2,13 @@ import React, { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { toast } from "react-toastify";
 import { AuthContext } from "../contexts/UserContext";
+import {
+  FaShopify,
+  FaRegArrowAltCircleRight,
+  FaInfoCircle,
+  FaCartPlus,
+} from "react-icons/fa";
+import { HiUserCircle } from "react-icons/hi";
 
 const Header = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -166,7 +173,7 @@ const Header = () => {
             {isMenuOpen && (
               <div className="absolute top-0 left-0 w-full">
                 <div className="p-5 bg-white border rounded shadow-sm">
-                  <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center justify-between mb-5">
                     <div>
                       <Link
                         to="/"
@@ -212,7 +219,8 @@ const Header = () => {
                   </div>
                   <nav>
                     <ul className="space-y-4">
-                      <li>
+                      <li className="flex">
+                        <FaCartPlus className="w-8 h-8 mr-2"></FaCartPlus>
                         <NavLink
                           to="/buy"
                           aria-label="Our product"
@@ -226,7 +234,8 @@ const Header = () => {
                           Buy
                         </NavLink>
                       </li>
-                      <li>
+                      <li className="flex">
+                        <FaShopify className="w-8 h-8 mr-2"></FaShopify>
                         <NavLink
                           to="/shop"
                           aria-label="Product pricing"
@@ -240,7 +249,8 @@ const Header = () => {
                           Shop
                         </NavLink>
                       </li>
-                      <li>
+                      <li className="flex">
+                        <FaInfoCircle className="w-8 h-8 mr-2"></FaInfoCircle>
                         <NavLink
                           to="/about"
                           aria-label="About us"
@@ -257,12 +267,15 @@ const Header = () => {
                       {user && user?.uid ? (
                         <div className="flex flex-col">
                           {" "}
-                          <Link
-                            to="/profile"
-                            className="text-xl font-medium mr-5 text-gray-700"
-                          >
-                            Profile
-                          </Link>
+                          <div className="flex mb-1">
+                            <HiUserCircle className="w-8 h-8 mr-2"></HiUserCircle>
+                            <Link
+                              to="/profile"
+                              className="text-xl font-medium mr-5 text-gray-700"
+                            >
+                              Profile
+                            </Link>
+                          </div>
                           <button
                             onClick={handleLogout}
                             className="w-24 inline-flex items-center bg-black text-white border-0 py-1 px-3 focus:outline-none hover:bg-gray-500 rounded text-base mt-4 md:mt-0"
@@ -284,7 +297,8 @@ const Header = () => {
                       ) : (
                         <>
                           {" "}
-                          <li>
+                          <li className="flex">
+                            <FaRegArrowAltCircleRight className="mt-2 w-8 h-8 mr-2"></FaRegArrowAltCircleRight>
                             <Link
                               to="/register"
                               aria-label="Sign in"
@@ -295,7 +309,8 @@ const Header = () => {
                               Sign Up
                             </Link>
                           </li>
-                          <li>
+                          <li className="flex">
+                            <FaRegArrowAltCircleRight className="mt-2 w-8 h-8 mr-2"></FaRegArrowAltCircleRight>
                             <Link
                               to="/login"
                               className="btn btn-active rounded-full hover:bg-blue-500 hover:text-white"
