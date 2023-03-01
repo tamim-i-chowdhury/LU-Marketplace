@@ -88,7 +88,7 @@ const Footer = () => {
               © Copyright 2023. All Rights Reserved.
             </p>
 
-            <div className="flex -mx-2">
+            <div className="flex -mx-2 mt-2 md:mt-0">
               <a
                 href="/#"
                 className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
@@ -105,7 +105,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="#"
+                href="/"
                 className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
                 aria-label="Facebook"
               >
@@ -120,7 +120,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="#"
+                href="/"
                 className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
                 aria-label="Github"
               >
