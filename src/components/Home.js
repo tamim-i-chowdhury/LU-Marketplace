@@ -32,7 +32,7 @@ const Home = () => {
               T-shirt through this website.
             </p>
           </div>
-          <div className="flex flex-col items-center md:flex-row">
+          <div className="flex justify-start">
             <Link
               to="/about"
               className="inline-flex items-center justify-center w-full h-12 px-6 mb-3 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto md:mr-4 md:mb-0 bg-blue-500 hover:bg-blue-700 focus:shadow-outline focus:outline-none"

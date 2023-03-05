@@ -129,7 +129,6 @@ const Header = () => {
                     to="/register"
                     aria-label="Sign in"
                     title="Sign in"
-                    // className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-black transition duration-200 shadow-md bg-slate-400 hover:bg-slate-100 focus:shadow-outline focus:outline-none rounded-full"
                     className="btn btn-active btn-ghost rounded-full hover:bg-blue-500 hover:text-white"
                   >
                     Register
@@ -303,7 +302,6 @@ const Header = () => {
                               to="/register"
                               aria-label="Sign in"
                               title="Sign in"
-                              // className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-black transition duration-200 shadow-md bg-slate-400 hover:bg-slate-100 focus:shadow-outline focus:outline-none rounded-full"
                               className="btn btn-active btn-ghost rounded-full hover:bg-blue-500 hover:text-white"
                             >
                               Sign Up

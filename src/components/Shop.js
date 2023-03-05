@@ -4,7 +4,7 @@ const Shop = () => {
   return (
     <section className="container mx-auto">
       {/* The Banned Community */}
-      <div className="relative flex flex-col-reverse py-8 lg:py-0 lg:flex-row-reverse border-2 my-5 md:my-8">
+      <div className="relative flex flex-col-reverse py-8 lg:py-0 lg:flex-col border-2 my-5 md:my-8">
         <div className="w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:py-20 lg:max-w-screen-xl">
           <div className="mb-0 lg:max-w-lg lg:pr-8 xl:pr-6">
             <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-center">
@@ -23,7 +23,7 @@ const Shop = () => {
             <div className="my-5 text-center md:mb-16 lg:mb-20">
               <a
                 href="/"
-                className="py-2 px-4  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
+                className="py-2 px-4  bg-blue-500 hover:bg-blue-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
               >
                 Buy Now
               </a>
@@ -83,14 +83,14 @@ const Shop = () => {
         <div className="inset-y-0 top-0 right-0 w-full max-w-xl px-4 mx-auto mb-6 md:px-0 lg:pl-8 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-1/2 lg:max-w-full lg:absolute xl:px-0">
           <img
             className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-            src="https://scontent.fdac138-1.fna.fbcdn.net/v/t39.30808-6/329742524_720027926494944_1611157270670206791_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=oK_ZOD3DN5wAX_oP4bm&_nc_ht=scontent.fdac138-1.fna&oh=00_AfAhz-J5i8_9LmXyLjTcTZfakaWVbePuh0eFp5ooF6AFGw&oe=64044246"
+            src="https://scontent.fdac138-1.fna.fbcdn.net/v/t39.30808-6/329742524_720027926494944_1611157270670206791_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=Xbsv6dfFm1wAX8wCd3I&_nc_ht=scontent.fdac138-1.fna&oh=00_AfB2jxPqS83ujKCeDYN-PtW7cUYt6AEL2svcxcIpHuJA8A&oe=640A3106"
             alt=""
           />
         </div>
       </div>
 
       {/* Orpheus "bolt from the rock" */}
-      <div className="relative flex flex-col-reverse py-8 lg:py-0 lg:flex-col border-2 my-5 md:my-8">
+      <div className="relative flex flex-col-reverse lg:flex-col-reverse py-8 lg:py-0  border-2 my-5 md:my-8">
         <div className="w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:py-20 lg:max-w-screen-xl">
           <div className="mb-0 lg:max-w-lg lg:pr-8 xl:pr-6">
             <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-center">
@@ -108,7 +108,7 @@ const Shop = () => {
             <div className="my-5 text-center md:mb-16 lg:mb-20">
               <a
                 href="/"
-                className="py-2 px-4  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
+                className="py-2 px-4  bg-blue-500 hover:bg-blue-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
               >
                 Buy Now
               </a>
