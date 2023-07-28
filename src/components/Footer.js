@@ -34,32 +34,23 @@ const Footer = () => {
             </NavLink>
 
             <div className="flex flex-wrap justify-center mt-6 -mx-4">
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
                 aria-label="Reddit"
               >
                 {" "}
                 Home{" "}
-              </a>
+              </Link>
 
-              <a
-                href="/"
+              <Link
+                to="/team"
                 className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
                 aria-label="Reddit"
               >
                 {" "}
-                About{" "}
-              </a>
-
-              <a
-                href="/"
-                className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
-                aria-label="Reddit"
-              >
-                {" "}
-                Teams{" "}
-              </a>
+                Team{" "}
+              </Link>
 
               <Link
                 to="/privacy"

@@ -11,6 +11,7 @@ import UserProfile from "../components/UserProfile";
 import Root from "../layout/Root";
 import PrivateRoute from "./PrivateRoute";
 import Sales from "../components/Sales";
+import Team from "../components/Team";
 
 export const router = createBrowserRouter([
   {
@@ -61,6 +62,10 @@ export const router = createBrowserRouter([
       {
         path: "/profile",
         element: <UserProfile></UserProfile>,
+      },
+      {
+        path: "/team",
+        element: <Team></Team>,
       },
       {
         path: "/privacy",
