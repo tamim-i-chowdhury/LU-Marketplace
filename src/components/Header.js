@@ -26,8 +26,8 @@ const Header = () => {
         <div className="relative flex items-center justify-between">
           <NavLink
             to="/"
-            aria-label="Company"
-            title="Company"
+            aria-label="LU MarketPlace"
+            title="LU Marketplace"
             className="inline-flex items-center"
           >
             <svg
@@ -53,8 +53,8 @@ const Header = () => {
             <li>
               <NavLink
                 to="/buy"
-                aria-label="Our product"
-                title="Our product"
+                aria-label="Buy"
+                title="Buy"
                 className={({ isActive }) =>
                   isActive
                     ? "text-xl font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -67,8 +67,8 @@ const Header = () => {
             <li>
               <NavLink
                 to="/sale"
-                aria-label="Our product"
-                title="Our product"
+                aria-label="Sale"
+                title="Sale"
                 className={({ isActive }) =>
                   isActive
                     ? "text-xl font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -81,8 +81,8 @@ const Header = () => {
             <li>
               <NavLink
                 to="/shop"
-                aria-label="Product pricing"
-                title="Product pricing"
+                aria-label="Shop"
+                title="Shop"
                 className={({ isActive }) =>
                   isActive
                     ? "text-xl font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -141,8 +141,8 @@ const Header = () => {
                 <li>
                   <Link
                     to="/register"
-                    aria-label="Sign in"
-                    title="Sign in"
+                    aria-label="Register"
+                    title="Register"
                     className="btn btn-active btn-ghost rounded-full hover:bg-blue-500 hover:text-white"
                   >
                     Register
@@ -152,8 +152,8 @@ const Header = () => {
                   <Link
                     to="/login"
                     className="btn btn-active rounded-full hover:bg-blue-500 hover:text-white"
-                    aria-label="Sign up"
-                    title="Sign up"
+                    aria-label="Login"
+                    title="Login"
                   >
                     Login
                   </Link>
@@ -190,8 +190,8 @@ const Header = () => {
                     <div>
                       <Link
                         to="/"
-                        aria-label="Company"
-                        title="Company"
+                        aria-label="LU Marketplace"
+                        title="LU Marketplace"
                         className="inline-flex items-center"
                       >
                         <svg
@@ -236,8 +236,8 @@ const Header = () => {
                         <FaCartPlus className="w-8 h-8 mr-2"></FaCartPlus>
                         <NavLink
                           to="/buy"
-                          aria-label="Our product"
-                          title="Our product"
+                          aria-label="Buy"
+                          title="Buy"
                           className={({ isActive }) =>
                             isActive
                               ? "text-xl font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -251,8 +251,8 @@ const Header = () => {
                         <FaShopify className="w-8 h-8 mr-2"></FaShopify>
                         <NavLink
                           to="/shop"
-                          aria-label="Product pricing"
-                          title="Product pricing"
+                          aria-label="Shop"
+                          title="Shop"
                           className={({ isActive }) =>
                             isActive
                               ? "text-xl font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -314,8 +314,8 @@ const Header = () => {
                             <FaRegArrowAltCircleRight className="mt-2 w-8 h-8 mr-2"></FaRegArrowAltCircleRight>
                             <Link
                               to="/register"
-                              aria-label="Sign in"
-                              title="Sign in"
+                              aria-label="Sign up"
+                              title="Sign up"
                               className="btn btn-active btn-ghost rounded-full hover:bg-blue-500 hover:text-white"
                             >
                               Sign Up
@@ -326,8 +326,8 @@ const Header = () => {
                             <Link
                               to="/login"
                               className="btn btn-active rounded-full hover:bg-blue-500 hover:text-white"
-                              aria-label="Sign up"
-                              title="Sign up"
+                              aria-label="Sign in"
+                              title="Sign in"
                             >
                               Sign In
                             </Link>

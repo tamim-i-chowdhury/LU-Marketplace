@@ -4,7 +4,6 @@ import Buy from "../components/Buy";
 import ErrorPage from "../components/ErrorPage";
 import Home from "../components/Home";
 import Login from "../components/Login";
-import PrivacyAndTerms from "../components/PrivacyAndTerms";
 import Register from "../components/Register";
 import Shop from "../components/Shop";
 import UserProfile from "../components/UserProfile";
@@ -66,10 +65,6 @@ export const router = createBrowserRouter([
       {
         path: "/team",
         element: <Team></Team>,
-      },
-      {
-        path: "/privacy",
-        element: <PrivacyAndTerms></PrivacyAndTerms>,
       },
     ],
   },

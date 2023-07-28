@@ -11,7 +11,7 @@ const Team = () => {
         <p className="font-mono p-2 text-2xl font-bold text-center uppercase bg-teal-400 rounded-full px-4 mb-4">
           Discover Our Team
         </p>
-        <h1 className="text-4xl font-bold text-center sm:text-5xl">
+        <h1 className="py-2 text-4xl font-bold text-center sm:text-7xl">
           The people behind the scene
         </h1>
         <div className="flex flex-row flex-wrap-reverse justify-center mt-8">
