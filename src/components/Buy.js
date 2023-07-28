@@ -82,7 +82,6 @@ const Buy = () => {
             src="https://root-nation.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/04/poco-x3-pro-101.jpg.webp"
             alt="Xiaomi Poco X3 Pro"
           />
-
           <div className="flex items-center justify-between px-4 py-2 bg-gray-900">
             <h1 className="text-lg font-bold text-white">TK 12500</h1>
             <p className="text-white text-md">7 hours ago</p>
@@ -270,30 +269,29 @@ const Buy = () => {
           </div>
         </div>
       </div>
-
       {/* Best Places to sell your products */}
-      <header class="dark:bg-gray-900">
-        <div class="container px-6 py-16 mx-auto">
-          <div class="items-center lg:flex">
-            <div class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
+      <header className="dark:bg-gray-900">
+        <div className="container px-6 py-16 mx-auto">
+          <div className="items-center lg:flex">
+            <div className="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
               <img
-                class="w-full h-full max-w-md"
+                className="w-full h-full max-w-md"
                 src="https://merakiui.com/images/components/Email-campaign-bro.svg"
                 alt="Illustration Vector Art"
               />
             </div>
-            <div class="w-full lg:w-1/2">
-              <div class="text-center lg:text-end lg:max-w-lg">
-                <h1 class="text-3xl font-semibold text-gray-800 dark:text-white lg:text-4xl">
+            <div className="w-full lg:w-1/2">
+              <div className="text-center lg:text-end lg:max-w-lg">
+                <h1 className="text-3xl font-semibold text-gray-800 dark:text-white lg:text-4xl">
                   The Best Place To Sell Your{" "}
-                  <span class="text-blue-500">Product</span>
+                  <span className="text-blue-500">Product</span>
                 </h1>
 
-                <p class="mt-3 text-gray-600 dark:text-gray-400">
+                <p className="mt-3 text-gray-600 dark:text-gray-400">
                   Be the first guy to start making money!
                 </p>
 
-                <div class="mt-6 space-y-3 lg:space-y-0 lg:flex-row">
+                <div className="mt-6 space-y-3 lg:space-y-0 lg:flex-row">
                   <Link
                     to="/sale"
                     className="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500"

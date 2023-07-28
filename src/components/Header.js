@@ -49,7 +49,7 @@ const Header = () => {
               LU Marketplace
             </span>
           </NavLink>
-          <ul className="flex items-center hidden space-x-8 lg:flex">
+          <ul className="items-center hidden space-x-8 lg:flex">
             <li>
               <NavLink
                 to="/buy"
@@ -62,6 +62,20 @@ const Header = () => {
                 }
               >
                 Buy
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/sale"
+                aria-label="Our product"
+                title="Our product"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-xl font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                    : "text-xl font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                }
+              >
+                Sale
               </NavLink>
             </li>
             <li>
@@ -93,7 +107,7 @@ const Header = () => {
               </NavLink>
             </li>
           </ul>
-          <ul className="text-xl flex items-center hidden space-x-2 lg:flex">
+          <ul className="text-xl items-center hidden space-x-2 lg:flex">
             {user && user?.uid ? (
               <>
                 {" "}
