@@ -7,6 +7,7 @@ import {
   FaRegArrowAltCircleRight,
   FaInfoCircle,
   FaCartPlus,
+  FaDollarSign,
 } from "react-icons/fa";
 import { HiUserCircle } from "react-icons/hi";
 
@@ -66,16 +67,16 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                to="/sale"
-                aria-label="Sale"
-                title="Sale"
+                to="/sell"
+                aria-label="Sell"
+                title="Sell"
                 className={({ isActive }) =>
                   isActive
                     ? "text-xl font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                     : "text-xl font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                 }
               >
-                Sale
+                Sell
               </NavLink>
             </li>
             <li>
@@ -161,6 +162,7 @@ const Header = () => {
               </>
             )}
           </ul>
+          {/* For Navbar for Mobile Devices */}
           <div className="lg:hidden">
             <button
               aria-label="Open Menu"
@@ -245,6 +247,21 @@ const Header = () => {
                           }
                         >
                           Buy
+                        </NavLink>
+                      </li>
+                      <li className="flex">
+                        <FaDollarSign className="w-8 h-8 mr-2"></FaDollarSign>
+                        <NavLink
+                          to="/sell"
+                          aria-label="Sell"
+                          title="Sell"
+                          className={({ isActive }) =>
+                            isActive
+                              ? "text-xl font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                              : "text-xl font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                          }
+                        >
+                          Sell
                         </NavLink>
                       </li>
                       <li className="flex">

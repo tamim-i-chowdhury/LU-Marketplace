@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Sales = () => {
+const Sell = () => {
   const [selected, setSelected] = useState("");
 
   const handleChange = (event) => {
@@ -34,7 +34,7 @@ const Sales = () => {
             <section className="bg-white dark:bg-gray-900">
               <div className="py-8 px-4 mx-auto max-w-2xl lg:py-16">
                 <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-white">
-                  Sale Your Product
+                  Sell Your Product
                 </h2>
                 <form onSubmit={handleAddUser}>
                   <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
@@ -184,4 +184,4 @@ const Sales = () => {
   );
 };
 
-export default Sales;
+export default Sell;

@@ -293,10 +293,10 @@ const Buy = () => {
 
                 <div className="mt-6 space-y-3 lg:space-y-0 lg:flex-row">
                   <Link
-                    to="/sale"
+                    to="/sell"
                     className="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
                   >
-                    Sale Now
+                    Sell Now
                   </Link>
                 </div>
               </div>

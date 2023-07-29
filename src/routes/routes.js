@@ -9,7 +9,7 @@ import Shop from "../components/Shop";
 import UserProfile from "../components/UserProfile";
 import Root from "../layout/Root";
 import PrivateRoute from "./PrivateRoute";
-import Sales from "../components/Sales";
+import Sell from "../components/Sell";
 import Team from "../components/Team";
 
 export const router = createBrowserRouter([
@@ -31,10 +31,10 @@ export const router = createBrowserRouter([
         ),
       },
       {
-        path: "/sale",
+        path: "/sell",
         element: (
           <PrivateRoute>
-            <Sales></Sales>
+            <Sell></Sell>
           </PrivateRoute>
         ),
       },
