@@ -1,13 +1,7 @@
 import React from "react";
 
 const About = () => {
-  return (
-    <div>
-      <h3 className="text-center text-4xl font-medium mt-5 text-blue-500">
-        This is our web info route
-      </h3>
-    </div>
-  );
+  return <></>;
 };
 
 export default About;

@@ -24,8 +24,8 @@ const Home = () => {
                 Leading University
               </span>
             </h2>
-            <p className="text-base text-gray-700 md:text-lg">
-              LU Marketplace is a platform where university students, teachers
+            <p className="text-base font-normal text-justify text-black md:text-lg">
+              LU Marketplace is a platform where university's students, teachers
               and staffs can buy and sell almost everything between them! We
               help them to buy and sell eletronics products such as Mobile
               phone, laptop, gadgets, etc. Our university's clubs can sell their

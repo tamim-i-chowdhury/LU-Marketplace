@@ -1,8 +1,81 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Shop = () => {
   return (
     <section className="container mx-auto">
+      {/* Club Registration */}
+      <div className="bg-blue-600">
+        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+          <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
+            <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
+              <Link to="/shop" className="mb-6 sm:mx-auto">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-white">
+                  <svg
+                    className="w-10 h-10 text-deep-purple-900"
+                    stroke="currentColor"
+                    viewBox="0 0 52 52"
+                  >
+                    <polygon
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      fill="none"
+                      points="29 13 14 29 25 29 23 39 38 23 27 23"
+                    />
+                  </svg>
+                </div>
+              </Link>
+              <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+                <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
+                  <span className="relative inline-block">
+                    <svg
+                      viewBox="0 0 52 24"
+                      fill="currentColor"
+                      className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-deep-purple-accent-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+                    >
+                      <defs>
+                        <pattern
+                          id="700c93bf-0068-4e32-aafe-ef5b6a647708"
+                          x="0"
+                          y="0"
+                          width=".135"
+                          height=".30"
+                        >
+                          <circle cx="1" cy="1" r=".7" />
+                        </pattern>
+                      </defs>
+                      <rect
+                        fill="url(#700c93bf-0068-4e32-aafe-ef5b6a647708)"
+                        width="52"
+                        height="24"
+                      />
+                    </svg>
+                    <span className="relative">We</span>
+                  </span>{" "}
+                  will sell our club's T-shirts online
+                </h2>
+                <p className="text-base text-indigo-100 md:text-lg">
+                  Our decision to bring our club's T-shirt sales online stems
+                  from our commitment to reaching a wider audience and making
+                  our merchandise accessible to all. We understand that not
+                  everyone can visit our physical location, and by embracing
+                  e-commerce, we hope to connect with students, alumni, and
+                  supporters near and far.{" "}
+                </p>
+              </div>
+              <div className="text-2xl font-bold text-white">
+                Register below to post your club's T-shirt online
+              </div>
+              <div>
+                <button className="inline-flex items-center justify-center h-12 px-6 mt-4 font-semibold tracking-wide text-white transition duration-200 rounded shadow-md bg-black hover:bg-gray-700 focus:shadow-outline focus:outline-none">
+                  Register Here
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* The Banned Community */}
       <div className="relative flex flex-col-reverse py-8 lg:py-0 lg:flex-col border-2 my-5 md:my-8">
         <div className="w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:py-20 lg:max-w-screen-xl">

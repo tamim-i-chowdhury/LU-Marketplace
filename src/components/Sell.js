@@ -17,6 +17,7 @@ const Sell = () => {
     const sellerContactNumber = form.phoneNumber.value;
     const productInfo = form.productInfo.select();
     console.log(form.photo.value);
+    form.reset();
   };
 
   return (

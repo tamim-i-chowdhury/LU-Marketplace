@@ -18,7 +18,7 @@ const Team = () => {
           <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-96 xl:w-96 dark:bg-gray-100 dark:text-gray-800">
             <img
               alt=""
-              className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500"
+              className="self-center flex-shrink-0 w-40 h-40 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500"
               src={sagorImg}
             />
             <div className="flex-1 my-4">
@@ -74,7 +74,7 @@ const Team = () => {
           <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-96 dark:bg-gray-100 dark:text-gray-800">
             <img
               alt=""
-              className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500"
+              className="self-center flex-shrink-0 w-40 h-40 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500"
               src={tahmidImg}
             />
             <div className="flex-1 my-4">
@@ -130,7 +130,7 @@ const Team = () => {
           <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-96 xl:w-96 dark:bg-gray-100 dark:text-gray-800">
             <img
               alt=""
-              className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500"
+              className="self-center flex-shrink-0 w-40 h-40 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500"
               src={tamimImg}
             />
             <div className="flex-1 my-4">

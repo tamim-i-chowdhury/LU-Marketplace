@@ -32,10 +32,10 @@ const BuyAndSellCard = () => {
               money...
             </p>
             <Link
-              to="/sale"
+              to="/sell"
               className="inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-slate-500 hover:bg-slate-700 focus:shadow-outline focus:outline-none"
             >
-              Sale Now
+              Sell Now
             </Link>
           </div>
         </div>
