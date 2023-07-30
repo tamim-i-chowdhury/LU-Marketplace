@@ -3,7 +3,7 @@ import Lottie from "lottie-react";
 import marketplace from "../assets/marketplace.json";
 import { Link } from "react-router-dom";
 import { FcAdvance } from "react-icons/fc";
-import BuyAndSellCard from "./BuyAndSellCard";
+import BuyAndSellCard from "../components/Buy/BuyAndSellCard";
 
 const Home = () => {
   return (

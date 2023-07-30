@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import About from "../components/About";
-import Buy from "../components/Buy";
+import Buy from "../components/Buy/Buy";
 import ErrorPage from "../components/ErrorPage";
 import Home from "../components/Home";
 import Login from "../components/Login";
@@ -11,6 +11,7 @@ import Root from "../layout/Root";
 import PrivateRoute from "./PrivateRoute";
 import Sell from "../components/Sell";
 import Team from "../components/Team";
+import ProductDetails from "../components/Buy/ProductDetails";
 
 export const router = createBrowserRouter([
   {
@@ -29,6 +30,15 @@ export const router = createBrowserRouter([
             <Buy></Buy>
           </PrivateRoute>
         ),
+        // loader: () => console.log("Shob product fetch hobe ekane"),
+      },
+      {
+        path: "/buy/:productId",
+        element: <ProductDetails></ProductDetails>,
+        // loader: ({ params }) =>
+        //   console.log(
+        //     `Dynamically URL bowaiya fetch korte/${params.productId}`
+        //   ),
       },
       {
         path: "/sell",
