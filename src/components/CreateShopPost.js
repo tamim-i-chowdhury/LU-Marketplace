@@ -22,6 +22,7 @@ const CreateShopPost = () => {
       tShirtInfo,
       photo
     );
+    form.reset();
   };
   return (
     <section className="dark:bg-gray-900">
@@ -39,7 +40,7 @@ const CreateShopPost = () => {
               <h2 className="mb-4 text-xl text-center py-2 md:text-2xl lg:text-3xl font-bold bg-teal-400 rounded-full text-gray-900 dark:text-white">
                 Post Your Club's T-shirt Ad Here
               </h2>
-              <form className="mt-8 bg-red-300" onSubmit={handleAddToShop}>
+              <form className="mt-8" onSubmit={handleAddToShop}>
                 <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
                   <div className="sm:col-span-2">
                     <label
