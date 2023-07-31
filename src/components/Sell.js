@@ -15,14 +15,13 @@ const Sell = () => {
     const productPrice = form.price.value;
     const sellerName = form.sellerName.value;
     const sellerContactNumber = form.phoneNumber.value;
-    const productInfo = form.productInfo.select();
-    console.log(form.photo.value);
+    const productInfo = form.productInfo.value;
     form.reset();
   };
 
   return (
     <div>
-      <header className="dark:bg-gray-900">
+      <section className="dark:bg-gray-900">
         <div className="container px-6 py-16 mx-auto">
           <div className="items-center lg:flex">
             <div className="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
@@ -180,7 +179,7 @@ const Sell = () => {
             </section>
           </div>
         </div>
-      </header>
+      </section>
     </div>
   );
 };

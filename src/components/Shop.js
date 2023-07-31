@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const Shop = () => {
@@ -68,9 +67,12 @@ const Shop = () => {
                 Register below to post your club's T-shirt online
               </div>
               <div className="flex justify-center">
-                <button className="inline-flex items-center justify-center h-12 px-6 mt-4 font-semibold tracking-wide text-white transition duration-200 rounded shadow-md bg-black hover:bg-gray-700 focus:shadow-outline focus:outline-none">
+                <Link
+                  to="/shop/createShopPost"
+                  className="inline-flex items-center justify-center h-12 px-6 mt-4 font-semibold tracking-wide text-white transition duration-200 rounded shadow-md bg-black hover:bg-gray-700 focus:shadow-outline focus:outline-none"
+                >
                   Register Here
-                </button>
+                </Link>
               </div>
             </div>
           </div>

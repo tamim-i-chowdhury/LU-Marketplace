@@ -12,6 +12,7 @@ import PrivateRoute from "./PrivateRoute";
 import Sell from "../components/Sell";
 import Team from "../components/Team";
 import ProductDetails from "../components/Buy/ProductDetails";
+import CreateShopPost from "../components/CreateShopPost";
 
 export const router = createBrowserRouter([
   {
@@ -55,6 +56,10 @@ export const router = createBrowserRouter([
             <Shop></Shop>
           </PrivateRoute>
         ),
+      },
+      {
+        path: "/shop/createShopPost",
+        element: <CreateShopPost></CreateShopPost>,
       },
       {
         path: "/about",
