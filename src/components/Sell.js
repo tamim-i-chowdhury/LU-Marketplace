@@ -13,16 +13,16 @@ const Sell = () => {
     const productName = form.productName.value;
     const brandName = form.brand.value;
     const productPrice = form.price.value;
-    const sellerName = form.sellerName.value;
-    const sellerContactNumber = form.phoneNumber.value;
     const productInfo = form.productInfo.value;
+
+    console.log(productName, brandName, productPrice, productInfo, selected);
     form.reset();
   };
 
   return (
     <div>
       <section className="dark:bg-gray-900">
-        <div className="container px-6 py-16 mx-auto">
+        <div className="container px-6 py-6 mx-auto">
           <div className="items-center lg:flex">
             <div className="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
               <img
@@ -33,7 +33,7 @@ const Sell = () => {
             </div>
             <section className="bg-white dark:bg-gray-900">
               <div className="py-8 px-4 mx-auto max-w-2xl lg:py-16">
-                <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-white">
+                <h2 className="mb-4 text-center text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
                   Sell Your Product
                 </h2>
                 <form onSubmit={handleAddUser}>
@@ -78,7 +78,7 @@ const Sell = () => {
                         Price
                       </label>
                       <input
-                        type="number"
+                        type="type"
                         name="price"
                         id="price"
                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
@@ -101,8 +101,8 @@ const Sell = () => {
                       >
                         <option selected="">Select a category</option>
                         <option value="laptop">Laptop/Monitor/PC</option>
-                        <option value="getget">Gadget</option>
-                        <option value="phone">Phone</option>
+                        <option value="gadget">Gadget</option>
+                        <option value="mobile">Mobile</option>
                       </select>
                     </div>
                     <div>
@@ -117,38 +117,6 @@ const Sell = () => {
                         name="photo"
                         id="photo"
                         className="p-2 w-11/12 border-2 border-dashed rounded-md dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800"
-                      />
-                    </div>
-                    <div className="w-full">
-                      <label
-                        htmlFor="brand"
-                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                      >
-                        Your Name
-                      </label>
-                      <input
-                        type="text"
-                        name="sellerName"
-                        id="name"
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                        placeholder="Your Name"
-                        required=""
-                      />
-                    </div>
-                    <div className="w-full">
-                      <label
-                        htmlFor="contact-number"
-                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                      >
-                        Your Contact Number
-                      </label>
-                      <input
-                        type=""
-                        name="phoneNumber"
-                        id="phone-number"
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                        placeholder="Phone Number"
-                        required=""
                       />
                     </div>
                     <div className="sm:col-span-2">

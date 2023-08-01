@@ -7,26 +7,13 @@ const CreateShopPost = () => {
     const clubName = form.clubName.value;
     const editionYear = form.editionYear.value;
     const price = form.price.value;
-    const sellerName = form.sellerName.value;
-    const phoneNumber = form.phoneNumber.value;
-    const email = form.email.value;
     const tShirtInfo = form.tShirtInfo.value;
-    const photo = form.photo.value;
-    console.log(
-      clubName,
-      editionYear,
-      price,
-      sellerName,
-      phoneNumber,
-      email,
-      tShirtInfo,
-      photo
-    );
+    console.log(clubName, editionYear, price, tShirtInfo);
     form.reset();
   };
   return (
     <section className="dark:bg-gray-900">
-      <div className="container px-6 py-16 mx-auto">
+      <div className="container px-6 py-4 mx-auto">
         <div className="items-center lg:flex">
           <div className="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
             <img
@@ -36,7 +23,7 @@ const CreateShopPost = () => {
             />
           </div>
           <section className="bg-white dark:bg-gray-900">
-            <div className="py-8 px-4 mx-auto max-w-2xl lg:py-16">
+            <div className="py-4 px-4 mx-auto max-w-2xl lg:py-16">
               <h2 className="mb-4 text-xl text-center py-2 md:text-2xl lg:text-3xl font-bold bg-teal-400 rounded-full text-gray-900 dark:text-white">
                 Post Your Club's T-shirt Ad Here
               </h2>
@@ -82,7 +69,7 @@ const CreateShopPost = () => {
                       T-shirt's Price
                     </label>
                     <input
-                      type="number"
+                      type="text"
                       name="price"
                       id="price"
                       className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
@@ -102,53 +89,6 @@ const CreateShopPost = () => {
                       name="photo"
                       id="photo"
                       className="p-2 w-11/12 border-2 border-dashed rounded-md dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800"
-                    />
-                  </div>
-                  <div className="w-full">
-                    <label
-                      htmlFor="brand"
-                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >
-                      Your Name
-                    </label>
-                    <input
-                      type="text"
-                      name="sellerName"
-                      id="name"
-                      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                      placeholder="Your Name"
-                      required=""
-                    />
-                  </div>
-                  <div className="w-full">
-                    <label
-                      htmlFor="contact-number"
-                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >
-                      Your Contact Number
-                    </label>
-                    <input
-                      type="text"
-                      name="phoneNumber"
-                      id="phone-number"
-                      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                      placeholder="Phone Number"
-                      required=""
-                    />
-                  </div>
-                  <div className="w-full">
-                    <label
-                      htmlFor="email"
-                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >
-                      Your Email
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                      placeholder="Enter your email"
                     />
                   </div>
                   <div className="sm:col-span-2">
