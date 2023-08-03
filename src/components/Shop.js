@@ -158,7 +158,7 @@ const Shop = () => {
         <div className="inset-y-0 top-0 right-0 w-full max-w-xl px-4 mx-auto mb-6 md:px-0 lg:pl-8 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-1/2 lg:max-w-full lg:absolute xl:px-0">
           <img
             className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-            src="https://scontent.fdac138-1.fna.fbcdn.net/v/t39.30808-6/329742524_720027926494944_1611157270670206791_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=Xbsv6dfFm1wAX8wCd3I&_nc_ht=scontent.fdac138-1.fna&oh=00_AfB2jxPqS83ujKCeDYN-PtW7cUYt6AEL2svcxcIpHuJA8A&oe=640A3106"
+            src="https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/329742524_720027926494944_1611157270670206791_n.jpg?_nc_cat=105&cb=99be929b-3346023f&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHHWKE4EiuJ8OW5BY-4rb814Q0nJmxVaeXhDScmbFVp5bQRAq5geWvagoRCuPX4syebHpel4M9JlgCaCIk6h4IM&_nc_ohc=gYLVW_jhuEAAX8tlDqh&_nc_ht=scontent.fdac138-2.fna&oh=00_AfDHuXldCAyEb3_7I7J5GvbTpkl_D_SG03V-JmSVIRaxqg&oe=64CFF206"
             alt=""
           />
         </div>
