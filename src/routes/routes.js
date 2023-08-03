@@ -45,15 +45,15 @@ export const router = createBrowserRouter([
         //   ),
       },
       {
-        path: "/buy/mobileCorner",
+        path: "/mobileCorner",
         element: <MobileCorner></MobileCorner>,
       },
       {
-        path: "/buy/gadgetCorner",
+        path: "/gadgetCorner",
         element: <GadgetCorner></GadgetCorner>,
       },
       {
-        path: "/buy/laptopCorner",
+        path: "/laptopCorner",
         element: <LaptopCorner></LaptopCorner>,
       },
       {
